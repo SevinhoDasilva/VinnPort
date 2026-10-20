@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Galeri — Vinnfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="loader" id="loader" aria-label="Memuat halaman">
+        <div class="loader-orbit loader-orbit-one"></div>
+        <div class="loader-orbit loader-orbit-two"></div>
+        <div class="loader-core">
+            <div class="loader-mark">V<span>✳</span></div>
+            <div class="loader-submark">VINNFOLIO / CREATIVE PORTFOLIO</div>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-progress-top"><span>MEMUAT PENGALAMAN</span><strong id="loaderPercent">00%</strong></div>
+            <div class="loader-track"><i></i></div>
+        </div>
+        <p class="loader-caption">SEDIKIT IDE. BANYAK CERITA.</p>
+    </div>
+    <div class="grain"></div>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-icon">V.</span><span>VINN<span
+                    class="muted">FOLIO</span></span></a><button class="menu-toggle" id="menuToggle">☰</button>
+        <nav id="nav"><a href="index.html">Beranda</a><a href="about.html">Tentang</a><a class="active"
+                href="gallery.html">Galeri</a><a href="projects.html">Project</a><a
+                href="contact.html">Kontak</a><button class="theme-toggle" id="themeToggle">☼</button></nav>
+    </header>
+    <main class="wrap page-main">
+        <div class="page-intro reveal">
+            <p class="eyebrow">02 / GALERI VISUAL</p>
+            <h1>Collected<br><span class="outline-text">moments.</span></h1>
+            <p class="intro-lead">Potongan momen, sudut pandang, dan cerita yang saya temukan di sepanjang perjalanan.
+            </p>
+        </div>
+        <div class="gallery-toolbar reveal">
+            <div class="filter-group"><button class="filter-btn active" data-filter="all">Semua</button><button
+                    class="filter-btn" data-filter="street">Street</button><button class="filter-btn"
+                    data-filter="nature">Nature</button><button class="filter-btn" data-filter="daily">Daily
+                    life</button></div><span id="photoCount">6 FRAME / DEMO</span>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose"
+            aria-label="Tutup">×</button><button class="lightbox-prev" id="lightboxPrev"
+            aria-label="Foto sebelumnya">←</button>
+        <figure><img id="lightboxImg" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure><button class="lightbox-next" id="lightboxNext" aria-label="Foto berikutnya">→</button>
+    </div>
+    <footer class="footer wrap"><a class="brand" href="index.html"><span class="brand-icon">V.</span><span>VINN<span
+                    class="muted">FOLIO</span></span></a>
+        <p>Dirancang dengan rasa ingin tahu. © <span class="year"></span></p><a href="#" class="back-top">KEMBALI KE
+            ATAS ↑</a>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

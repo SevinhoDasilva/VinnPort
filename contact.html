@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kontak — VinDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="loader" id="loader" aria-label="Memuat halaman">
+        <div class="loader-orbit loader-orbit-one"></div>
+        <div class="loader-orbit loader-orbit-two"></div>
+        <div class="loader-core">
+            <div class="loader-mark">V<span>✳</span></div>
+            <div class="loader-submark">VINNFOLIO / CREATIVE PORTFOLIO</div>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-progress-top"><span>MEMUAT PENGALAMAN</span><strong id="loaderPercent">00%</strong></div>
+            <div class="loader-track"><i></i></div>
+        </div>
+        <p class="loader-caption">SEDIKIT IDE. BANYAK CERITA.</p>
+    </div>
+    <div class="grain"></div>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-icon">V.</span><span>VINN<span
+                    class="muted">FOLIO</span></span></a><button class="menu-toggle" id="menuToggle">☰</button>
+        <nav id="nav"><a href="index.html">Beranda</a><a href="about.html">Tentang</a><a
+                href="gallery.html">Galeri</a><a href="projects.html">Project</a><a class="active"
+                href="contact.html">Kontak</a><button class="theme-toggle" id="themeToggle">☼</button></nav>
+    </header>
+    <main class="wrap page-main contact-page">
+        <div class="page-intro reveal">
+            <p class="eyebrow">04 / BUKA RUANG OBROLAN</p>
+            <h1>Let's make<br><span class="outline-text">something.</span></h1>
+            <p class="intro-lead">Ada ide, kolaborasi, atau sekadar ingin menyapa? Saya terbuka untuk ngobrol.</p>
+        </div>
+        <section class="contact-layout">
+            <div class="contact-left reveal">
+                <p class="eyebrow">KONTAK LANGSUNG</p><a class="contact-link"
+                    href="mailto:vinvin140107@gmail.com"><span>EMAIL</span><b>vinvin140107@gmail.com ↗</b></a><a
+                    class="contact-link" href="https://instagram.com/vinn.dasilva_" target="_blank"
+                    rel="noreferrer"><span>INSTAGRAM</span><b>@vinn.dasilva_ ↗</b></a>
+                <a class="contact-link whatsapp-link"
+                    href="https://wa.me/6285224943832?text=Halo%20Vino%2C%20aku%20tertarik%20untuk%20ngobrol%20tentang%20kolaborasi."
+                    target="_blank" rel="noreferrer"><span>WHATSAPP · CHAT LANGSUNG</span><b><span
+                            class="whatsapp-icon">↗</span> Chat Vino di WhatsApp</b><small class="whatsapp-hint">Nomor
+                        demo — ganti dengan nomor WhatsApp kamu di contact.html</small></a>
+                <div class="availability"><span class="live-dot"></span> TERBUKA UNTUK KOLABORASI</div>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <p class="eyebrow">KIRIM PESAN</p><label>Nama kamu<input name="name" required
+                        placeholder="Tulis nama kamu"></label><label>Email kamu<input type="email" name="email" required
+                        placeholder="nama@email.com"></label><label>Ceritakan idemu<textarea name="message" required
+                        rows="4" placeholder="Halo Vino, aku ingin ngobrol tentang..."></textarea></label><button
+                    class="btn btn-primary" type="submit">Siapkan email <span>↗</span></button>
+                <p class="form-note">Tombol ini akan membuka aplikasi email kamu, bukan mengirim otomatis.</p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer wrap"><a class="brand" href="index.html"><span class="brand-icon">V.</span><span>VINN<span
+                    class="muted">FOLIO</span></span></a>
+        <p>Dirancang dengan rasa ingin tahu. © <span class="year"></span></p><a href="#" class="back-top">KEMBALI KE
+            ATAS ↑</a>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
